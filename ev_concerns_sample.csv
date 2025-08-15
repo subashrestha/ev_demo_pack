@@ -1,0 +1,76 @@
+state,city,zip,concern,mention_count,avg_sentiment
+TX,Austin,78701,Range anxiety,133,-0.326
+TX,Austin,78701,Maintenance/repairs,163,0.72
+TX,Austin,78701,Purchase cost,108,-0.072
+TX,Austin,78702,Range anxiety,24,-0.421
+TX,Austin,78702,Purchase cost,189,0.045
+TX,Austin,78702,Charging access,191,-0.167
+TX,Austin,78704,Charging access,123,0.114
+TX,Austin,78704,Maintenance/repairs,196,-0.165
+TX,Austin,78704,Purchase cost,54,-0.243
+TX,Austin,78705,Resale value,171,0.091
+TX,Austin,78705,Maintenance/repairs,84,-0.424
+TX,Austin,78705,Battery life,65,-0.408
+TX,Austin,78741,Maintenance/repairs,73,-0.455
+TX,Austin,78741,Resale value,95,0.097
+TX,Austin,78741,Battery life,34,-0.531
+CA,San Francisco,94102,Charging access,146,-0.03
+CA,San Francisco,94102,Purchase cost,80,-0.047
+CA,San Francisco,94102,Battery life,87,-0.05
+CA,San Francisco,94103,Battery life,71,-0.357
+CA,San Francisco,94103,Maintenance/repairs,126,-0.242
+CA,San Francisco,94103,Dealer knowledge,42,0.227
+CA,San Francisco,94107,Purchase cost,35,-0.086
+CA,San Francisco,94107,Charging access,117,-0.295
+CA,San Francisco,94107,Dealer knowledge,134,-0.708
+CA,San Francisco,94110,Dealer knowledge,24,-0.044
+CA,San Francisco,94110,Battery life,193,0.051
+CA,San Francisco,94110,Resale value,93,0.16
+CA,San Francisco,94112,Battery life,118,0.184
+CA,San Francisco,94112,Maintenance/repairs,70,0.28
+CA,San Francisco,94112,Resale value,191,0.013
+NY,New York,10001,Range anxiety,48,0.395
+NY,New York,10001,Dealer knowledge,41,-0.304
+NY,New York,10001,Purchase cost,36,-0.179
+NY,New York,10002,Battery life,108,-0.488
+NY,New York,10002,Charging access,98,-0.132
+NY,New York,10002,Purchase cost,91,0.363
+NY,New York,10003,Range anxiety,110,0.297
+NY,New York,10003,Resale value,117,0.192
+NY,New York,10003,Charging access,189,0.363
+NY,New York,10011,Resale value,123,0.376
+NY,New York,10011,Dealer knowledge,102,-0.471
+NY,New York,10011,Charging access,118,-0.146
+NY,New York,11201,Resale value,58,0.076
+NY,New York,11201,Battery life,87,-0.067
+NY,New York,11201,Dealer knowledge,80,-0.229
+IL,Chicago,60601,Range anxiety,166,-0.287
+IL,Chicago,60601,Charging access,145,-0.207
+IL,Chicago,60601,Maintenance/repairs,133,0.009
+IL,Chicago,60602,Charging access,155,0.074
+IL,Chicago,60602,Resale value,165,-0.106
+IL,Chicago,60602,Purchase cost,86,-0.065
+IL,Chicago,60603,Purchase cost,155,-0.222
+IL,Chicago,60603,Charging access,182,-0.022
+IL,Chicago,60603,Range anxiety,110,-0.257
+IL,Chicago,60607,Purchase cost,172,0.185
+IL,Chicago,60607,Resale value,83,-0.069
+IL,Chicago,60607,Battery life,106,-0.02
+IL,Chicago,60611,Maintenance/repairs,141,0.131
+IL,Chicago,60611,Dealer knowledge,162,0.1
+IL,Chicago,60611,Range anxiety,36,-0.31
+FL,Miami,33101,Resale value,83,-0.103
+FL,Miami,33101,Range anxiety,41,0.024
+FL,Miami,33101,Maintenance/repairs,131,-0.269
+FL,Miami,33125,Charging access,167,-0.241
+FL,Miami,33125,Range anxiety,35,-0.03
+FL,Miami,33125,Purchase cost,197,-0.534
+FL,Miami,33130,Dealer knowledge,35,-0.522
+FL,Miami,33130,Charging access,159,-0.711
+FL,Miami,33130,Purchase cost,183,0.371
+FL,Miami,33132,Battery life,104,-0.003
+FL,Miami,33132,Purchase cost,154,-0.348
+FL,Miami,33132,Maintenance/repairs,125,-0.133
+FL,Miami,33139,Charging access,164,0.021
+FL,Miami,33139,Maintenance/repairs,196,-0.669
+FL,Miami,33139,Battery life,27,0.08
