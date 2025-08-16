@@ -42,6 +42,25 @@ if state != "ALL":
 if city != "ALL":
     df = df[df["city"] == city]
 
+# --- Income filter (sidebar) ---
+if len(df):
+    min_income = int(df["median_income"].min())
+    max_income = int(df["median_income"].max())
+else:
+    # fallback bounds if df is empty
+    min_income, max_income = 0, 200000
+
+inc_range = st.sidebar.slider(
+    "Filter by median income ($)",
+    min_value=min_income,
+    max_value=max_income,
+    value=(min_income, max_income),
+    step=5000
+)
+
+# Apply the income filter to your working dataframe
+df = df[(df["median_income"] >= inc_range[0]) & (df["median_income"] <= inc_range[1])]
+
 # Metrics
 total_pred_sales = int(df["predicted_ev_sales_next_12m"].sum())
 avg_income = int(df["median_income"].mean())
