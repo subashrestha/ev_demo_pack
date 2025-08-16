@@ -32,3 +32,6 @@ streamlit run app.py
 Streamlit: https://evdemopack-ig98cjdoxubzb49vgzfhxg.streamlit.app/
 
 - request access if you can't open it
+
+or download the necessary package including streamlit and run locally by running 
+`streamlit run app.py`
