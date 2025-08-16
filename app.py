@@ -105,7 +105,8 @@ st.download_button(
     label="⬇️ Download Top ZIPs (CSV)",
     data=csv_bytes,
     file_name="top_zips.csv",
-    mime="text/csv"
+    mime="text/csv",
+    key="download_top_zips"   # 👈 unique key
 )
 
 # --- Campaign lift simulator ---
@@ -181,7 +182,7 @@ with st.expander("ℹ️ About this demo / BI talking points", expanded=False):
         """
     )
 
-st.caption("Note: Mock dataset for interview demo. Replace CSVs with real sources post-interview.")
+st.caption("Note: Mock dataset for interview demo. Replace CSVs with real source data.")
 
 st.set_page_config(page_title="EV Market Insights – Subash", layout="wide")
 st.caption("By Subash Shrestha • Data Science & BI • Austin, TX")
