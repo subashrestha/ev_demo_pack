@@ -205,9 +205,6 @@ with st.expander("ℹ️ About this demo / BI talking points", expanded=False):
     )
 
 # .streamlit/config.toml
-[theme]
-base="light"
-primaryColor="#1F6FEB"
 
 st.caption("Note: Mock dataset for demo. Replace CSVs with real source data.")
 
