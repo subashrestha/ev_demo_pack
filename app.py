@@ -140,7 +140,7 @@ for r in recs:
 st.divider()
 with st.expander("ℹ️ About this demo / BI talking points", expanded=False):
     st.markdown(
-        \"\"\"
+        """
         **Purpose:** Identify *where* to focus EV campaigns and *what* buyer barriers to address.
 
         **Data signals (mock):** Demographics (population, income), ICE vs EV share, charging density, and aggregated concern mentions.
@@ -150,7 +150,8 @@ with st.expander("ℹ️ About this demo / BI talking points", expanded=False):
         **BI angle:** This can back a Power BI/Tableau dashboard. Replace CSVs with AFDC/Census feeds; add XGBoost/Prophet for forecasting.
 
         **Next steps:** Enrich with incentive data, charger gap analysis, and cohort retention to estimate CLV uplift.
-        \"\"\"
+        """
     )
 
 st.caption("Note: Mock dataset for interview demo. Replace CSVs with real sources post-interview.")
+
