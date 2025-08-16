@@ -6,6 +6,9 @@ import pydeck as pdk
 
 st.set_page_config(page_title="EV Market Insights", layout="wide")
 
+from datetime import datetime
+st.caption(f"By Subash Shrestha • Demo data generated: {datetime.today().strftime('%Y-%m-%d')}")
+
 @st.cache_data
 def load_data():
     geo = pd.read_csv("ev_geo_data.csv")
@@ -201,7 +204,12 @@ with st.expander("ℹ️ About this demo / BI talking points", expanded=False):
         """
     )
 
-st.caption("Note: Mock dataset for interview demo. Replace CSVs with real source data.")
+# .streamlit/config.toml
+[theme]
+base="light"
+primaryColor="#1F6FEB"
+
+st.caption("Note: Mock dataset for demo. Replace CSVs with real source data.")
 
 st.set_page_config(page_title="EV Market Insights – Subash", layout="wide")
 st.caption("By Subash Shrestha • Data Science & BI • Austin, TX")
