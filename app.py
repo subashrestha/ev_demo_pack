@@ -97,6 +97,34 @@ st.download_button(
     mime="text/csv"
 )
 
+st.dataframe(top_df, use_container_width=True)
+
+# Download button for Top ZIPs
+csv_bytes = top_df.to_csv(index=False).encode("utf-8")
+st.download_button(
+    label="⬇️ Download Top ZIPs (CSV)",
+    data=csv_bytes,
+    file_name="top_zips.csv",
+    mime="text/csv"
+)
+
+# --- Campaign lift simulator ---
+st.subheader("Campaign lift simulator")
+lift = st.slider("Marketing lift (relative %)", 0, 50, 10)
+
+sim_df = top_df.copy()
+# NOTE: uses the renamed column from above ("Predicted sales (12m)")
+sim_df["Predicted sales (12m)"] = (
+    sim_df["Predicted sales (12m)"] * (1 + lift/100.0)
+).astype(int)
+
+st.dataframe(sim_df, use_container_width=True)
+
+# Optional: show incremental units for the selected Top ZIPs
+delta_units = int(sim_df["Predicted sales (12m)"].sum() - top_df["Predicted sales (12m)"].sum())
+st.caption(f"Δ units across Top {top_k} ZIPs: +{delta_units:,} at +{lift}% lift")
+
+
 # Concerns
 st.subheader("Buyer concerns & sentiment")
 conc = concerns.copy()
